@@ -8,12 +8,33 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f4f8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
         }
+
+        /* Header styling - Align to top of the page */
+        .header {
+            background-color: teal;
+            color: #f1faee;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+        }
+
+        .header button {
+            background-color: teal;
+            color: #f1faee;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Center the login form */
         .login-container {
             width: 100%;
             max-width: 400px;
@@ -22,12 +43,15 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
+            margin-top: 50px;
         }
+
         .login-container h2 {
             color: teal;
             font-size: 24px;
             margin-bottom: 20px;
         }
+
         .login-container input[type="text"],
         .login-container input[type="password"] {
             width: 100%;
@@ -36,6 +60,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         .login-container input[type="submit"] {
             width: 100%;
             padding: 10px;
@@ -46,6 +71,7 @@
             font-size: 16px;
             cursor: pointer;
         }
+
         .login-container input[type="submit"]:hover {
             background-color: teal;
         }
@@ -53,6 +79,14 @@
 </head>
 <body>
 
+<!-- Header with clickable "ONLINE BOOK SHOP" button at the top -->
+<div class="header">
+    <button onclick="window.location.href='index.html'">
+        ONLINE BOOK SHOP
+    </button>
+</div>
+
+<!-- Login form below the header -->
 <div class="login-container">
     <h2>Login</h2>
     <form action="#" method="post">
