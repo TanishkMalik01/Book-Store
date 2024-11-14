@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Book Shop</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f4f8;
+			color: #333;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		.header {
+			background-color:teal;
+			color: #f1faee;
+			padding: 20px;
+			text-align: center;
+			font-size: 32px;
+			font-family: 'Georgia', serif;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: center;
+			background-color: #457b9d;
+			padding: 10px 0;
+		}
+
+		.navbar a {
+			color: #f1faee;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 18px;
+		}
+
+		.navbar a:hover {
+			background-color:teal;
+			border-radius: 4px;
+		}
+
+		.main {
+			display: flex;
+			margin-top: 20px;
+		}
+
+		.sidebar {
+			width: 20%;
+			background-color: #f1faee;
+			padding: 20px;
+			border-right: 2px solid #dee2e6;
+		}
+
+		.sidebar h3 {
+			color:teal;
+			font-size: 20px;
+		}
+
+		.sidebar a {
+			display: block;
+			color: #457b9d;
+			padding: 10px 0;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+		.sidebar a:hover {
+			color:teal;
+			font-weight: bold;
+		}
+
+		.content {
+			width: 80%;
+			padding: 20px;
+			background-color: #ffffff;
+		}
+
+		.content h2 {
+			color:teal;
+			font-size: 24px;
+		}
+
+		.footer {
+			background-color:teal;
+			color: #f1faee;
+			text-align: center;
+			padding: 10px 0;
+			font-size: 14px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="header">ONLINE BOOK SHOP</div>
+
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="login.html">Login</a>
+			<a href="registeration.htm">Registration</a>
+			<a href="catalogue.html">Catalogue</a>
+			<a href="cart.html">Cart</a>
+		</div>
+
+		<div class="main">
+			<div class="sidebar">
+				<h3>Categories</h3>
+				<a href="#">CSE</a>
+				<a href="#">ECE</a>
+				<a href="#">EEE</a>
+				<a href="#">Civil</a>
+			</div>
+
+			<div class="content">
+				<h2>Welcome to the Online Book Shop!</h2>
+				<p>Explore a wide collection of books across different categories. Sign in or register to start browsing
+					and shopping.</p>
+			</div>
+		</div>
+
+		<div class="footer">
+			© 2024 Online Book Shop
+		</div>
+	</div>
+
+</body>
+
+</html>

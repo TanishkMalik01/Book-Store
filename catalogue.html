@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        
+        .header {
+            background-color: teal;
+            color: #f1faee;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: teal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: center;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #457b9d;
+            color: #f1faee;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .image-column {
+            width: 20%;
+        }
+
+        .description-column {
+            width: 50%;
+            color: #333;
+        }
+
+        .price-column {
+            width: 15%;
+            color: #457b9d;
+            font-weight: bold;
+        }
+
+        .action-column {
+            width: 15%;
+        }
+
+        .action-column button {
+            background-color: teal;
+            color: #f1faee;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .action-column button:hover {
+            background-color: #457b9d;
+        }
+
+        .footer {
+            background-color: teal;
+            color: #f1faee;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">ONLINE BOOK SHOP</div>
+
+<div class="container">
+    <h1>Book Catalog - Information Technology</h1>
+    <table id="bookCatalogTable">
+        <thead>
+            <tr>
+                <th class="image-column">Book Cover</th>
+                <th class="description-column">Book Description</th>
+                <th class="price-column">Price</th>
+                <th class="action-column">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="image-column"><img src="img.png" alt="The Alchemist Cover" style="width: 100px;"></td>
+                <td class="description-column">
+                    <h2 style="margin: 0; color: teal;">The Alchemist</h2>
+                    <p>By Paulo Coelho. A fable about spiritual journey, self-discovery, and listening to your heart.</p>
+                    <p>Pages: 208, Genre: Fiction, Publication Date: 1988</p>
+                </td>
+                <td class="price-column">$15.99</td>
+                <td class="action-column"><button onclick="addToCart('BOOK001')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td class="image-column"><img src="img.png" alt="The Power of Now Cover" style="width: 100px;"></td>
+                <td class="description-column">
+                    <h2 style="margin: 0; color: teal;">The Power of Now</h2>
+                    <p>By Eckhart Tolle. A spiritual guide to living in the present moment.</p>
+                    <p>Pages: 224, Genre: Self-Help, Publication Date: 1997</p>
+                </td>
+                <td class="price-column">$12.99</td>
+                <td class="action-column"><button onclick="addToCart('BOOK002')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td class="image-column"><img src="img.png" alt="To Kill a Mockingbird Cover" style="width: 100px;"></td>
+                <td class="description-column">
+                    <h2 style="margin: 0; color: teal;">To Kill a Mockingbird</h2>
+                    <p>By Harper Lee. A classic novel about racial injustice, tolerance, and the loss of innocence.</p>
+                    <p>Pages: 281, Genre: Fiction, Publication Date: 1960</p>
+                </td>
+                <td class="price-column">$10.99</td>
+                <td class="action-column"><button onclick="addToCart('BOOK003')">Add to Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    © 2024 Online Book Shop
+</div>
+
+<script>
+    function addToCart(bookId) {
+        // Add book to cart logic here
+        console.log(`Book ${bookId} added to cart.`);
+    }
+</script>
+
+</body>
+</html>

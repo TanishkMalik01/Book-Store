@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+
+        }
+
+        .header {
+            background-color: teal;
+            color: #f1faee;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: teal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .image-column {
+            width: 20%;
+
+        }
+
+        .description-column {
+            width: 30%;
+
+        }
+
+        .price-column {
+            width: 15%;
+
+        }
+
+        .quantity-column {
+            width: 15%;
+
+        }
+
+        .action-column {
+            width: 15%;
+
+        }
+
+        .action-column button {
+            background-color: teal;
+            color: #f1faee;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .action-column button:hover {
+            background-color: #457b9d;
+        }
+
+        .footer {
+            background-color: teal;
+            color: #f1faee;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">ONLINE BOOK SHOP</div>
+
+<h1>My Cart</h1>
+
+<table id="cartTable">
+    <thead>
+        <tr>
+            <th class="image-column">Book Cover</th>
+            <th class="description-column">Book Description</th>
+            <th class="price-column">Price</th>
+            <th class="quantity-column">Quantity</th>
+            <th class="action-column">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="image-column"><img src="https://imgs.search.brave.com/obA6SU9857BUoJaRXIKYyn5Sv7TwfHos1FCTIr3XAjo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDEw/LzA3LzA2L2FydHMv/YWxjaGVtaXN0L2Fs/Y2hlbWlzdC1hcnRp/Y2xlSW5saW5lLmpw/Zw" alt="The Alchemist Cover" style="width: 100px;"></td>
+            <td class="description-column">
+                <h2>The Alchemist</h2>
+                <p>By Paulo Coelho</p>
+            </td>
+            <td class="price-column">$15.99</td>
+            <td class="quantity-column">
+                <input type="number" value="1" min="1">
+            </td>
+            <td class="action-column"><button onclick="removeFromCart('BOOK001')">Remove</button></td>
+        </tr>
+        <tr>
+            <td class="image-column"><img src="https://imgs.search.brave.com/fISRrXMgXMmsr4YMmgFi1IT9Cq0fbLOwMrpyjOYeNZs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFGTkNYRGpFK0wu/anBn" alt="The Power of Now Cover" style="width: 100px;"></td>
+            <td class="description-column">
+                <h2>The Power of Now</h2>
+                <p>By Eckhart Tolle</p>
+            </td>
+            <td class="price-column">$12.99</td>
+            <td class="quantity-column">
+                <input type="number" value="1" min="1">
+            </td>
+            <td class="action-column"><button onclick="removeFromCart('BOOK002')">Remove</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td class="action-column"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td class="action-column"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td class="action-column"><button onclick="checkout()">Checkout</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="footer">
+    © 2024 Online Book Shop
+</div>
+
+<script>
+    function removeFromCart(bookId) {
+        // Remove book from cart logic here
+        console.log(`Book ${bookId} removed from cart.`);
+    }
+
+    function checkout() {
+        // Checkout logic here
+        console.log("Checkout initiated.");
+    }
+</script>
+
+</body>
+</html>
